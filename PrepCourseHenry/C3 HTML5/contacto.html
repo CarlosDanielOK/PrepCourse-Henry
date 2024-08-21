@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Este es un formulario de contacto</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Este es un formulario para contactarnos</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint veritatis animi hic porro. Veniam laborum totam exercitationem expedita minus. Dicta beatae, asperiores earum error id non quasi? Dolor, distinctio modi.</p>
+        </div>
+
+        <form> <!-- es importante ponerlo antes de un input -->
+            <div>
+                <!-- label sirve para escribir un texto al lado izquierdo del input para indicar al usuario que debe escribir en el input (es decir, en la casilla) -->
+                <label for="nombre">Nombre:</label> <!-- for sirve para indicar que este label pertenece al input llamado name="nombre" -->
+                <input type="text" name="nombre" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" placeholder="Apellido">
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" placeholder="Edad">
+            </div>
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" placeholder="Contraseña">
+            </div>
+            <button>ENVIAR</button>
+        </form>
+    </main>
+</body>
+</html>

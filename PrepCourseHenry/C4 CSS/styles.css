@@ -1,0 +1,62 @@
+body {
+    background-color: red;
+}
+
+#titulos {
+    border: 2px solid black;
+    /*viewport width = vw*/
+    width: 50vw; /*significa que siempre usara el 50% del total de la pantalla del usuario */
+    margin: auto; /* centra el div con los titulos */
+    padding: 3em;
+}
+
+#tituloprincipal {
+    border: 2px solid blue;
+    text-align: center; /* centra el titulo principal */
+    font-size: 5em;
+}
+
+.titulo {
+    font-size: 2em; /* 2em significa el doble del tamaño base */
+}
+
+h4 {
+    background-color: blue;
+}
+
+.logo {
+    width: 200px;
+}
+
+.tarjetas {
+    border: 2px solid black;
+    width: fit-content; /*se ajusta el ancho al tamaño que tenga el contenido*/
+    padding: 0px 1em 0px 1em;
+    border-radius: 10%;
+    transition: 1s; /*tiempo que tarda en hacer la transicion en hover*/
+    display: flex;
+    flex-direction: column; /*coloca los elementos en columna, es decir uno abajo del otro*/
+    gap: 1em; /*distancia entre un elemento y otro*/
+    align-items: center; /*se centran los elementos*/
+}
+
+.tarjetas:hover {
+    background-color: rgb(170, 24, 170); /* las tarjetas se pondran de este color cuando pase el mouse por encima */
+}
+
+#contenedor-tarjetas {
+    background-color: orange;
+    width: 85vw; /* ocupa el 85% de la pantalla */
+    margin: auto; /*centra el contenedor*/
+    border: 2px solid black;
+    padding: 2em;
+    /*FLEXBOX*/
+    display: flex;
+    flex-direction: row; /*los posiciona uno al lado del otro*/
+    justify-content: space-evenly;
+}
+
+/*centrar el contenido de un div
+display: flex;
+align-items: center;
+*/
